@@ -1,0 +1,122 @@
+/*#FFF5E0
+#FF6969
+#C70039
+#141E46
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.radio-canada-big-<uniquifier> {
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+*{
+    font-family: "Radio Canada Big", sans-serif;
+    color: #141E46;
+}
+
+.navbar li a{
+    font-weight: 700;
+    color: black;
+    
+}
+.navbar li a:hover{
+    color: #C70039;
+}
+
+.navbar{
+    background-color: white;
+}
+
+
+.card{
+   
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+  .btn-custom.btn-primary {
+    background-color: #C70039; /* Change to your desired color */
+    border-color: #cc0000; /* Change to your desired color */
+    color: #ffffff; /* Change to your desired text color */
+  }
+  
+  .btn-custom.btn-primary:hover {
+    background-color: #141E46; /* Change to your desired hover color */
+    border-color: #cc0000; /* Change to your desired hover color */
+  }
+#Home{
+    background: linear-gradient(to bottom, #d62457,#f97979, #ffb2b2 );
+    min-height: 15rem;
+}
+#Lesson_Section p{
+    color: #141E46;
+}
+#Lesson_Section a{
+    text-decoration: none;
+    transition: all 0.3s;
+}
+#Lesson_Section a:hover{
+    
+    color: #C70039;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+#Lesson1 p{
+    margin: 0;
+}
+.code {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.pagination .page-link {
+    color: #141E46; /* Text color */
+    background-color: #ffffff; /* Background color */
+    border-color: #141E46; /* Border color */
+}
+.pagination .page-link:hover{
+    background-color: #C70039;
+    color: white;
+    border-color: #141E46;
+}
+.pagination .page-link::after{
+    color: white;
+    
+}
+
+/* Change active page indicator colors */
+.pagination .page-item.active .page-link {
+    color: #fff; /* Text color */
+    background-color: #C70039; /* Background color */
+    border-color: #141E46; /* Border color */
+}
+.btn-custom.btn-primary {
+    background-color: #C70039; /* Change to your desired color */
+    border-color: #cc0000; /* Change to your desired color */
+    color: #ffffff; /* Change to your desired text color */
+  }
+  
+  .btn-custom.btn-primary:hover {
+    background-color: #141E46; /* Change to your desired hover color */
+    border-color: #cc0000; /* Change to your desired hover color */
+  }
+  .footerLink{
+    text-decoration: none;
+    color: #C70039;
+}
+@media(max-width: 767px){
+      
+}
+@media(max-width: 493px){
+    
+}
+@media(max-width: 361px){
+   
+}

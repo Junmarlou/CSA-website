@@ -1,0 +1,156 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Radio Canada Big", sans-serif;
+    color: #141E46;
+}
+#Logo{
+    width: 5rem;
+    border-radius: 50%;
+    
+}
+body{
+    background-color: #FF6969;
+    background: linear-gradient(to right, #f97979, #ffb2b2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #141E46;
+    padding-bottom: 2rem;
+}
+.welcomecontainer{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    background-color: #ffffff00;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+    color: #141E46;
+}
+
+.container span{
+    font-size: 12px;
+}
+
+.container a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+    color: #141E46;
+}
+
+.container button{
+    background-color: #FF6969;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    height: 100%;
+}
+
+.container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 50%;
+    outline: none;
+    min-width: 14rem;
+    max-width: 20rem;
+}
+
+.container.active .sign-in{
+    transform: translateX(100%);
+}
+
+
+.container.active .sign-up{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+
+.social-icons{
+    margin: 15px 0;
+}
+
+.social-icons a{
+    border: 1px solid #ccc;
+    border-radius: 15%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    color: #141E46;
+}
+#Sign_Up{
+    text-decoration: underline;
+}
+
+@media(max-width: 768px){
+    body{
+        padding: 0.5rem;
+        padding-top: 2rem;
+    }
+    form{
+        padding: 0.5rem;
+    }
+}
+@media(max-width: 456px){
+    .container{
+        flex-direction: row;
+    }
+    .container form{
+        width: 100%;
+    }
+}

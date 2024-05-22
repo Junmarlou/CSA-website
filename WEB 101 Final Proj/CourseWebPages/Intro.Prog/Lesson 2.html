@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 | Variables and Data Types</title>
+    <link rel="stylesheet" href="/CourseWebPages/Styles.css">
+    <link rel="icon" href="/Media/Logo.png" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        .navbar li a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-expand-sm fixed-top px-1 px-md-5" style="background-color: #C70039;">
+        <div class="container-fluid mx-1 mx-sm-5">
+            <a class="navbar-brand" href="#" style="font-family: Radio Canada Big, sans-serif;
+                font-weight: 700;
+                color: #141E46;">CSA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end w-100" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MainWebPages/Home.html   ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MainWebPages/Course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #ffffff;" aria-current="page"
+                            href="Home.html">Lesson</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MainWebPages/About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5" id="Lesson2">
+        <div class="container py-2">
+            <h1>Lesson 2: Variables and Data Types</h1>
+            <p>In this lesson, you will explore variables and data types in C++ and learn how to manipulate them.</p>
+        </div>
+        <div class="container py-2">
+            <h3>C++ Variables</h3>
+            <p>Variables are containers for storing data values. In C++, there are different types of variables, such
+                as:</p>
+            <ul>
+                <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                <li>double - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                <li>char - stores single characters, such as 'a' or 'B'</li>
+                <li>string - stores text, such as "Hello World"</li>
+                <li>bool - stores values with two states: true or false</li>
+            </ul>
+        </div>
+        <div class="container py-2">
+            <h3>Declaring (Creating) Variables</h3>
+            <p>To create a variable, specify the type and assign it a value:</p>
+            <p>Syntax</p>
+            <div class="code">
+                <p>type variableName = value;</p>
+            </div>
+            <p>Where type is one of C++ types (such as int), and variableName is the name of the variable (such as x or
+                myName). The equal sign is used to assign values to the variable.</p>
+            <p>Example</p>
+            <div class="code">
+                <p>int myNum = 15;</p>
+                <p>cout << myNum;</p>
+            </div>
+            <p class="text-danger">Note that if you assign a new value to an existing variable, it will overwrite the
+                previous value:
+            </p>
+        </div>
+
+        <div class="container py-2">
+            <h3>Display Variables</h3>
+            <p>The cout object is used together with the << operator to display variables:</p>
+                    <div class="code">
+                        <p>int myAge = 35;</p>
+                        <p>cout << "I am " << myAge << " years old." ;</p>
+                    </div>
+        </div>
+
+        <div class="container py-2">
+            <h3>Add Variables Together</h3>
+            <p>To add a variable to another variable, you can use the + operator:</p>
+            <div class="code">
+                <p>int x = 5;</p>
+                <p>int y = 6;</p>
+                <p>int sum = x + y;</p>
+                <p>cout << sum;</p>
+            </div>
+        </div>
+        <div class="container py-2">
+            <h3>Declare Many Variables</h3>
+            <p>To declare more than one variable of the same type, use a comma-separated list:</p>
+            <div class="code">
+                <p>int x = 5, y = 6, z = 50;</p>
+                <p>cout << x + y + z;</p>
+            </div>
+        </div>
+        <div class="container py-2">
+            <h3>One Value to Multiple Variables</h3>
+            <p>You can also assign the same value to multiple variables in one line:</p>
+            <div class="code">
+                <p>int x, y, z;</p>
+                <p>x = y = z = 50;</p>
+                <p>cout << x + y + z;</p>
+            </div>
+        </div>
+
+        <div class="container py-2">
+            <h3>C++ Identifiers</h3>
+            <p>All C++ variables must be identified with unique names, called identifiers. Identifiers can contain
+                letters, digits, and underscores, but must begin with a letter or an underscore. They are
+                case-sensitive and cannot contain whitespaces or special characters.</p>
+            <div class="code">
+                <p>// Good</p>
+                <p> int minutesPerHour = 60;</p>
+
+                <p>// OK, but not so easy to understand what m actually is</p>
+                <p>int m = 60;</p>
+            </div>
+        </div>
+
+        <div class="container py-2">
+            <h3>Constants</h3>
+            <p>When you do not want others (or yourself) to change existing variable values, use the const keyword to
+                declare a variable as "constant" or read-only.</p>
+            <div class="code">
+                <p>const int myNum = 15; // myNum will always be 15</p>
+                <p> myNum = 10; // error: assignment of read-only variable 'myNum'</p>
+            </div>
+        </div>
+
+        <div class="container py-2">
+            <h3>C++ Data Types</h3>
+            <p>A variable in C++ must be a specified data type. There are various data types such as int, float, double,
+                char, bool, and string, each used for different purposes.</p>
+            <p>Example</p>
+            <div class="code">
+                <p>int myNum = 5; // Integer (whole number)</p>
+                <p>float myFloatNum = 5.99; // Floating point number</p>
+                <p>double myDoubleNum = 9.98; // Floating point number</p>
+                <p>char myLetter = 'D'; // Character</p>
+                <p>bool myBoolean = true; // Boolean</p>
+                <p>string myText = "Hello"; // String</p>
+
+            </div>
+        </div>
+
+        <div class="container py-2">
+            <h3>User Input</h3>
+            <p>cin is used to get user input in C++, allowing users to enter data from the keyboard. It is used
+                together with the extraction operator (>>).</p>
+            <div class="code">
+                <p>int x; </p>
+                <p> cout << "Type a number: " ; // Type a number and press enter</p>
+                        <p> cin >> x; // Get user input from the keyboard</p>
+                        <p>cout << "Your number is: " << x; // Display the input value</p>
+            </div>
+        </div>
+
+        <div class="container py-2">
+            <h3>Creating a Simple Calculator</h3>
+            <p>In this example, the user inputs two numbers, which are then added together to find the sum.</p>
+            <div class="code">
+                <p>int x, y;</p>
+                <p>int sum;</p>
+                <p>cout << "Type a number: " ;</p>
+                        <p>cin >> x;</p>
+                        <p>cout << "Type another number: " ;</p>
+                                <p>cin >> y;</p>
+                                <p>sum = x + y;</p>
+                                <p>cout << "Sum is: " << sum;</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="container py-5 d-flex justify-content-center">
+        <!-- Pagination for Lesson 2 -->
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="Lesson 1.html">Prev</a></li>
+            <li class="page-item"><a class="page-link" href="Lesson 1.html">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#Lesson2">2</a></li>
+            <li class="page-item"><a class="page-link" href="Lesson 3.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="Lesson 3.html">Next</a></li>
+        </ul>
+    </div>
+    <footer class="footer mt-auto pt-4 mt-1 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>About Us</h5>
+                    <p>We are dedicated to providing high-quality education and resources to help learners succeed in
+                        their goals.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/MainWebPages/Home.html" class="footerLink">Home</a></li>
+                        <li><a href="/MainWebPages/Course.html" class="footerLink">Courses</a></li>
+                        <li><a href="/MainWebPages/About.html" class="footerLink">About Us</a></li>
+                        <li><a href="/MainWebPages/Login.html" class="footerLink">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: codesculptacad@acad.com</p>
+                    <p>Phone: +123-456-7890</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted small">&copy; 2024 CodeSculpture Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

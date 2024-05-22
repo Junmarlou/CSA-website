@@ -1,0 +1,185 @@
+/*#FFF5E0
+#FF6969
+#C70039
+#141E46
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.radio-canada-big-<uniquifier> {
+  font-family: "Radio Canada Big", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+*{
+    font-family: "Radio Canada Big", sans-serif;
+    color: #141E46;
+}
+body{
+    position: relative;
+}
+#Home{
+    height: 70vh;
+    background: linear-gradient(to bottom, #d62457,#f97979, #ffb2b2 );
+    box-shadow: 1px 1px 10px 1px rgb(206, 206, 206);
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+.container-fluid{
+
+}
+.navbar li a{
+    font-weight: 700;
+    color: black;
+    
+}
+.navbar li a:hover{
+    color: #ffffff;
+}
+
+.navbar{
+    background-color: white;
+}
+
+
+#Home_Logo{
+    border-radius: 50%;
+    max-width: 15rem;
+    box-shadow: 0 3px 3px 1px #0000006e;
+}
+.HomeLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Cards-Home{
+    z-index: 1;
+    margin-top: -4rem;
+
+}
+#Cards-Home svg{
+    width: 3rem;
+    height: 4rem;
+    fill: #141E46;
+}
+.card{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+#Home2{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-position: center;
+    background-size: cover;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.Quote{
+    max-width: 1rem;
+}
+#Comments{
+   
+}
+.category-link {
+    display: block;
+    position: relative;
+    overflow: hidden; /* Hide any overflow content */
+  }
+  
+  .category-link img.Top_category_img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .category-link:hover img.Top_category_img {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
+  }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+    opacity: 0.1;
+  }
+  #Instructor_Img{
+    min-width: 10rem;
+  }
+  .btn-custom.btn-primary {
+    background-color: #C70039; /* Change to your desired color */
+    border-color: #cc0000; /* Change to your desired color */
+    color: #ffffff; /* Change to your desired text color */
+  }
+  
+  .btn-custom.btn-primary:hover {
+    background-color: #141E46; /* Change to your desired hover color */
+    border-color: #cc0000; /* Change to your desired hover color */
+  }
+
+  #courses {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.course-link {
+    min-height: 13rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-link h3 {
+    color: #C70039;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-link p {
+    color: #141E46;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.teamprofile{
+    max-height: 21rem;
+    object-fit: cover;
+}
+.footerLink{
+    text-decoration: none;
+    color: #C70039;
+}
+@media(max-width: 767px){
+    .course-link{
+        min-height: 8rem;
+    }  
+}
+@media(max-width: 493px){
+    #Home{
+        padding: 1rem;
+    }
+}
+@media(max-width: 361px){
+    #Home{
+        margin-top: 3rem
+    }
+    #Cards-Home{
+        margin-top: -1rem;
+    
+    }
+}

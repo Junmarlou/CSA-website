@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 | Variables and Data Types</title>
+    <link rel="stylesheet" href="/CourseWebPages/Styles.css">
+    <link rel="icon" href="/Media/Logo.png" type="image">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        .navbar li a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-expand-sm fixed-top px-1 px-md-5" style="background-color: #C70039;">
+        <div class="container-fluid mx-1 mx-sm-5">
+            <a class="navbar-brand" href="#" style="font-family: Radio Canada Big, sans-serif;
+                font-weight: 700;
+                color: #141E46;">CSA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end w-100" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MainWebPages/Home.html   ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MainWebPages/Course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #ffffff;" aria-current="page"
+                            href="Home.html">Lesson</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/MainWebPages/About.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5" id="Lesson2">
+        <div class="container py-2">
+            <h1>Lesson 2: Encapsulation and Inheritance</h1>
+        </div>
+
+        <div class="container py-2">
+            <h3>Encapsulation</h3>
+            <p>Encapsulation is one of the core principles of Object-Oriented Programming (OOP) that promotes data
+                hiding and bundling data and methods within a class. It involves wrapping data (variables) and methods
+                (functions) into a single unit called a class, and controlling access to that data through methods.</p>
+
+        </div>
+
+        <div class="container py-2">
+            <h5>Data Hiding</h5>
+            <p class="mb-2">Encapsulation hides the internal state of an object from the outside world. Only the methods
+                of the
+                class
+                can directly access and modify the object's data, while external code interacts with the object through
+                these methods.</p>
+            <p class="mb-2">This prevents unauthorized access to the object's internal state and protects it from being
+                manipulated in unintended ways.</p>
+        </div>
+
+        <div class="container py-2">
+            <h5>Bundling Data and Methods</h5>
+            <p class="mb-2">Encapsulation bundles related data and methods together within a class, creating a
+                self-contained unit.
+                This promotes better organization and improves code maintainability by grouping related functionality.
+            </p>
+            <p class="mb-2">By encapsulating data and methods within a class, developers can create reusable and modular
+                components that can be easily integrated into different parts of the application.</p>
+        </div>
+
+        <div class="container py-2">
+            <h5>Access Control</h5>
+            <p class="mb-2">Encapsulation allows classes to define different levels of access to their members using
+                access
+                specifiers such as public, private, and protected.</p>
+            <p class="mb-2">Public members are accessible from outside the class, allowing external code to interact
+                with the object.
+            </p>
+            <p class="mb-2">Private members are only accessible within the class itself, preventing direct access from
+                outside.
+                Access to private members is typically provided through public methods, which can enforce validation and
+                business rules.</p>
+            <p class="mb-2">Protected members are accessible within the class itself and its subclasses (derived
+                classes), allowing
+                for controlled access in inheritance hierarchies.</p>
+        </div>
+        <div class="container py-2">
+            <h5>Example</h5>
+            <div class="code">
+                <p> #include <iostream>
+                </p>
+                <p> using namespace std;</p>
+                <p>&nbsp;</p>
+                <p> class BankAccount {</p>
+                <p> private:</p>
+                <p> &nbsp;string accountNumber; // Private member variable</p>
+                <p> &nbsp;double balance; // Private member variable</p>
+                <p>&nbsp;</p>
+                <p> public:</p>
+                <p> &nbsp;// Public member methods</p>
+                <p> &nbsp;void setAccountNumber(string accNum) {</p>
+                <p> &nbsp;&nbsp;accountNumber = accNum;</p>
+                <p> &nbsp;}</p>
+                <p></p>
+                <p> &nbsp;void deposit(double amount) {</p>
+                <p> &nbsp;&nbsp;if (amount > 0) {</p>
+                <p> &nbsp;&nbsp;&nbsp;balance += amount;</p>
+                <p>&nbsp;&nbsp;&nbsp; cout << "Deposit of $" << amount << " successful.\n" ; } </p>
+                        <p> &nbsp;&nbsp; else { </p>
+                        <p> &nbsp;&nbsp;&nbsp; cout << "Invalid deposit amount.\n" ; </p>
+                                <p> &nbsp;&nbsp; } </p>
+                                <p> &nbsp; } </p>
+                                <p> &nbsp; void displayBalance() { </p>
+                                <p> &nbsp;&nbsp; cout << "Account Balance: $" << balance << endl; </p>
+                                        <p> &nbsp; } </p>
+                                        <p> }; </p>
+                                        <p> intmain() { </p>
+                                        <p>&nbsp;BankAccount myAccount; </p>
+                                        <p> &nbsp;myAccount.setAccountNumber("123456789");</p>
+                                        <p>&nbsp; myAccount.deposit(1000);</p>
+                                        <p> &nbsp;myAccount.displayBalance();</p>
+                                        <p>return 0; </p>
+                                        <p> }</p>
+            </div>
+        </div>
+
+        <div class="container py-2">
+            <h5>In this example:</h5>
+            <p class="mb-2">The 'BankAccount' class encapsulates the account number and balance as private member
+                variables.</p>
+            <p class="mb-2">Public member methods ('setAccountNumber', 'deposit', 'displayBalance') provide controlled
+                access to the
+                private data.</p>
+            <p class="mb-2">External code interacts with the 'BankAccount' object through these public methods, ensuring
+                data
+                integrity and security.</p>
+        </div>
+
+        <div class="container py-2">
+            <h5>Benefits of Encapsulation:</h5>
+            <p class="mb-2">Improved code maintainability and scalability.</p>
+            <p class="mb-2">Enhanced data security and protection from unauthorized access.</p>
+            <p class="mb-2">Simplified interface for interacting with objects, leading to cleaner and more readable
+                code.</p>
+            <p class="mb-2">Promotion of code reuse through modular and self-contained components.</p>
+        </div>
+
+        <div class="container py-2">
+            <h3>Inheritance</h3>
+            <p>Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a new class
+                (subclass or derived class) to inherit properties and behaviors from an existing class (superclass or
+                base class). This mechanism facilitates code reuse, promotes modularity, and enables the creation of
+                hierarchical class structures.
+            </p>
+        </div>
+        <div class="container py-2">
+            <h5>Superclass and Subclass</h5>
+            <p>Inheritance involves two classes: the superclass and the subclass.</p>
+            <p>The superclass is the existing class that provides the blueprint for creating objects.</p>
+            <p>The subclass is the new class that inherits properties and behaviors from the superclass.</p>
+        </div>
+        <div class="container py-2">
+            <h5>Inheriting Properties and Behaviors</h5>
+            <p>The subclass automatically gains access to all the members (fields, methods) of the superclass.</p>
+            <p>This includes both inherited attributes (fields) and inherited methods.</p>
+            <p>The subclass can extend the functionality of the superclass by adding new members or overriding existing
+                ones.</p>
+        </div>
+        <div class="container py-2">
+            <h5>Syntax of Inheritance</h5>
+            <p>In most object-oriented languages like C++, Java, and Python, inheritance is implemented using the
+                'extends' (or ':,' in C++) keyword.</p>
+            <p>Syntax: 'class Subclass : public Superclass { ... }'</p>
+        </div>
+        <div class="container py-2">
+            <h5>Types of Inheritance</h5>
+            <p>Single Inheritance: A subclass inherits from only one superclass.</p>
+            <p>Multiple Inheritance: A subclass inherits from multiple superclasses (not supported in some languages
+                like Java due to complexity and ambiguity).</p>
+            <p>Multilevel Inheritance: A subclass inherits from another subclass, forming a hierarchy.</p>
+            <p>Hierarchical Inheritance: Multiple subclasses inherit from the same superclass.</p>
+        </div>
+
+        <div class="container py-2">
+            <h5>Example</h5>
+            <div class="code">
+                <p> #include <iostream>
+                </p>
+                <p> using namespace std;</p>
+                <p>&nbsp;</p>
+                <p> class Animal {</p>
+                <p> public:</p>
+                <p> &nbsp;void eat() {</p>
+                <p> &nbsp;&nbsp;cout << "The animal is eating." << endl;</p>
+                        <p>&nbsp;}</p>
+                        <p> &nbsp;void sleep() {</p>
+                        <p> &nbsp;&nbsp;cout << "The animal is sleeping." << endl;</p>
+                                <p>&nbsp;}</p>
+                                <p>};</p>
+                                <p> // Subclass (Derived class)</p>
+                                <p> class Dog : public Animal {</p>
+                                <p>public:</p>
+                                <p> &nbsp;void bark() {</p>
+                                <p> &nbsp;&nbsp;cout << "The dog is barking." << endl;</p>
+                                        <p>&nbsp;}</p>
+                                        <p>};</p>
+                                        <p> intmain() { </p>
+                                        <p>&nbsp;// Create an object of the subclass (Dog)</p>
+                                        <p>&nbsp;Dog myDog; </p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;// Access inherited methods from the superclass (Animal)</p>
+                                        <p> &nbsp;myDog.eat(); // Output: The animal is eating.</p>
+                                        <p>&nbsp; myDog.sleep(); // Output: The animal is sleeping.</p>
+                                        <p>&nbsp;</p>
+                                        <p> &nbsp;// Access methods specific to the subclass (Dog)</p>
+                                        <p> &nbsp;myDog.bark(); // Output: The dog is barking.</p>
+                                        <p>&nbsp;</p>
+                                        <p>return 0; </p>
+                                        <p> }</p>
+            </div>
+        </div>
+        <div class="container py-2">
+            <h5>In this example:</h5>
+            <p class="mb-2">the 'Dog' class inherits from the 'Animal' class. The 'Dog' class automatically gains access
+                to
+                the 'eat()'' and 'sleep()' methods from the 'Animal' class, while also defining its own method 'bark()'.
+                This
+                demonstrates how inheritance promotes code reuse and allows for the extension of functionality in
+                subclasses.
+            </p>
+
+
+    </main>
+
+    <div class="container py-5 d-flex justify-content-center">
+        <!-- Pagination for Lesson 2 -->
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="Lesson 1.html">Prev</a></li>
+            <li class="page-item"><a class="page-link" href="Lesson 1.html">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#Lesson2">2</a></li>
+            <li class="page-item"><a class="page-link" href="Lesson 3.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="Lesson 3.html">Next</a></li>
+        </ul>
+    </div>
+    <footer class="footer mt-auto pt-4 mt-1 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>About Us</h5>
+                    <p>We are dedicated to providing high-quality education and resources to help learners succeed in
+                        their goals.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/MainWebPages/Home.html" class="footerLink">Home</a></li>
+                        <li><a href="/MainWebPages/Course.html" class="footerLink">Courses</a></li>
+                        <li><a href="/MainWebPages/About.html" class="footerLink">About Us</a></li>
+                        <li><a href="/MainWebPages/Login.html" class="footerLink">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: codesculptacad@acad.com</p>
+                    <p>Phone: +123-456-7890</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted small">&copy; 2024 CodeSculpture Academy. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
